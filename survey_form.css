@@ -1,0 +1,23 @@
+#main-body{
+      font-size: 17px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      text-align: center;
+}
+#title{
+  text-align: center;
+}
+#description{
+
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#survey-form{
+  text-align: center;
+}
+label, input {
+    vertical-align: middle;
+}

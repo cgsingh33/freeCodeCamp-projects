@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="survey_form.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  </head>
+ <div class="jumbotron jumbotron-fluid bg-warning text-black text-center" style="background: grey">
+   <h1 id="title"> General Survey </h1></div>
+  <p id="description"> Please fill this form </p><br>
+ <div id="main-body">
+<form id="survey-form">
+  <label id="name-label" for="Name">Name: </label><input id="name" type="text" name="name" placeholder="enter your name" required><br><br>
+  <label id="email-label" for="email">Email: </label><input id="email" type="email" size="34" maxLength="64" required
+          placeholder="username@gmail.com" pattern=".+@gmail.com"
+          title="Please provide only gmail address"><br><br>
+  <label id="number-label" for="age">Age: </label><input id="nummber" type="number" max="50" min="15" placeholder="enter" required><br><br>
+  Which sport you play:
+  <select id="dropdown" name="sports">
+    <option value="cricket">cricket</option>
+    <option value="football">football</option>
+    <option value="hockey">hockey</option>
+    <option value="rugby">rugby</option>
+  </select><br><br>
+  Level you have played this sport:<br>
+  <input type="radio" name="sport" value="School">school<br>
+  <input type="radio" name="sport" value="District">District<br>
+  <input type="radio" name="sport" value="State">State<br>
+  <input type="radio" name="sport" value="National">National<br><br>
+  Is this sport included in olympics:<br>
+  <input type="radio" name="boolean" value="Yes">Yes<br>
+  <input type="radio" name="boolean" value="No">No<br><br>
+  What other games you like:<br>
+  <input type="checkbox" name="game1" value="chess">chess<br>
+  <input type="checkbox" name="game2" value="carrom">carrom<br>
+  <input type="checkbox" name="game3" value="ludo">ludo<br>
+  <input type="checkbox" name="game4" value="cards">cards<br>
+  <input type="checkbox" name="game5" value="snooker">snooker<br><br>
+  What are your opinions about sports in India:<br>
+  <textarea rows="4" cols="50" placeholder="Describe yourself here..."></textarea><br><br>
+  <button id="submit" type="button">Submit</button>
+  </div>
+  </html>
